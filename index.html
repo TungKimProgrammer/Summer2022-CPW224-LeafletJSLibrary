@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Make Change</title>
+    <link rel="stylesheet" href="/css/ChangeCalculatorAdvanced.css">
+    <script src="/js/ChangeCalculatorAdvanced.js"></script>
+</head>
+
+<body>
+    <main>
+        <div class="block-1">
+            <div id="displayInput">
+            <h2>Change Calculator</h2>
+
+            <label>Enter amount of dollars:</label>
+            <input class="default-text-box" type="text" id="dollars" />
+            <input class="default-button" type="button" value="To notes and coins" id="toNotesAndCoins" />
+            <br>
+
+            <label>Enter amount of cents:</label>
+            <input class="default-text-box" type="text" id="cents" />
+
+            <input class="default-button" type="button" value="To coins" id="toCoins" />
+            <br>
+            <br>
+            </div>
+
+            <div id="displayNotes">
+                <label>$100:</label>
+                <input class="default-text-box" type="text" id="notes100" disabled><br>
+
+                <label>$50:</label>
+                <input class="default-text-box" type="text" id="notes50" disabled><br>
+
+                <label>$20:</label>
+                <input class="default-text-box" type="text" id="notes20" disabled><br>
+
+                <label>$10:</label>
+                <input class="default-text-box" type="text" id="notes10" disabled><br>
+
+                <label>$5:</label>
+                <input class="default-text-box" type="text" id="notes5" disabled><br>
+
+                <label>$2:</label>
+                <input class="default-text-box" type="text" id="notes2" disabled><br>
+
+                <label>$1:</label>
+                <input class="default-text-box" type="text" id="notes1" disabled><br>
+            </div>
+            <br>
+
+            <div id="displayCoins">
+                <label>Quarters:</label>
+                <input class="default-text-box" type="text" id="quarters" disabled><br>
+
+                <label>Dimes:</label>
+                <input class="default-text-box" type="text" id="dimes" disabled><br>
+
+                <label>Nickels:</label>
+                <input class="default-text-box" type="text" id="nickels" disabled><br>
+
+                <label>Pennies:</label>
+                <input class="default-text-box" type="text" id="pennies" disabled><br>
+
+                <br>
+                <img id="displayImage" alt="smiley face" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Mr._Smiley_Face.svg/2000px-Mr._Smiley_Face.svg.png">
+                
+                <audio id="audioCash">
+                    <source src="https://sounds.pond5.com/cash-counting-pile-01-sound-effect-036715063_nw_prev.m4a">
+                </audio> 
+
+                <audio id="audioCoins">
+                    <source src="https://sounds.pond5.com/coins-rattling-02-sound-effect-049590929_nw_prev.m4a">
+                </audio> 
+
+                <audio id="audio-failed">
+                    <source src="https://sounds.pond5.com/cartoon-voice-uh-oh-looks-sound-effect-137429096_nw_prev.m4a">
+                </audio> 
+                <br>
+
+            </div>
+        </div>
+
+        <div class="block-2">
+            
+        </div>
+
+    </main>
+</body>
+
+</html>
