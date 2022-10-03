@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Library Practice</title>
+
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+        integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+        crossorigin="" />
+
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+        integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+        crossorigin="">
+    </script>
+</head>
+
+<body>
+    <div id="map">
+    </div>
+    <br>
+    <table>
+        <tr>
+            <td><input class="default-button" type="button" id="goSeattle" value="Seattle" onClick="goToX(goSeattle,13);"></td>
+            <td><input class="default-button" type="button" id="goNewYork" value="New York" onClick="goToX(goNewYork,13);"></td>
+            <td><input class="default-button" type="button" id="goLosAngeles" value="Los Angeles" onClick="goToX(goLosAngeles,13);"></td>
+        </tr>
+        <tr>
+            <td><input class="default-button" type="button" id="goAtlanta" value="Atlanta" onClick="goToX(goAtlanta,13);"></td>
+            <td><input class="default-button" type="button" id="goHouston" value="Houston" onClick="goToX(goHouston,13);"></td>
+            <td><input class="default-button" type="button" id="goChicago" value="Chicago" onClick="goToX(goChicago,13);"></td>
+        </tr>
+    </table>  <br>
+    <span style="text-align: center;">Click on buttons above or enter the Coordinates of a location you want to travel! </span>
+    <table>
+        <tr>
+            <td><input type="text" id="latitude" value=""></td>
+            <td><input type="text" id="longitude" value=""></td>
+            <td><input style="background-color: aqua;" class="default-button" type="button" id="submit" value="Let's go!" onClick="goByInput();"></td>
+        </tr>
+        <tr>
+            <td><span>Latitude</span></td>
+            <td><span></span>Longitude</td>
+            <td><input class="default-button" type="button" id="reset" value="Reset" onClick="clearErrors();"></td>
+        </tr>
+        
+    </table> 
+    
+    <br><br>
+    <span>Please add (-) before:</span>
+    <ul>
+        <li>the Latitude if Southern Hemisphere</li>
+        <li>the Longitude to the West</li>
+    </ul>    
+    <span>For example: Buenos Aires </span><span style="color: blue">34.6058° S, 58.4386° W </span> <br> <span>Enter: </span><span style="color:red">-34.6058</span> & <span style="color:red">-58.4386</span><br><br>
+
+       
+    <script src="/index.js">
+    </script>
+</body>
+
+</html>
